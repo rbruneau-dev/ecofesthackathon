@@ -1,0 +1,66 @@
+[
+    {
+        "key": "repas-veg",
+        "title": "Combien de repas végétariens ou végétaliens avez-vous prévu de servir pendant le festival ?",
+        "type": "number",
+        "unit": "repas",
+        "max": 3000,
+        "fields": [],
+        "choices": []
+    },
+    {
+        "key": "repas-meal",
+        "title": "Combien de repas contenant de la viande avez-vous prévu de servir pendant le festival ?",
+        "type": "number",
+        "unit": "repas",
+        "max": 3000,
+        "fields": [],
+        "choices": []
+    },
+    {
+        "key": "beer",
+        "title": "Combien de bouteilles de bière avez-vous prévu de servir pendant le festival ?",
+        "type": "number",
+        "unit": "bouteilles",
+        "max": 5000,
+        "fields": [],
+        "choices": []
+    },
+    {
+        "key": "wine",
+        "title": "Combien de bouteilles de vin avez-vous prévu de servir pendant le festival ?",
+        "type": "number",
+        "unit": "bouteilles",
+        "max": 5000,
+        "fields": [],
+        "choices": []
+    },
+    {
+        "key": "water",
+        "title": "Combien de litres d'eau en bouteille avez-vous prévu de servir pendant le festival ?",
+        "type": "number",
+        "unit": "litres",
+        "max": 5000,
+        "fields": [],
+        "choices": []
+    },
+    {
+        "key": "can",
+        "title": "Combien de canettes de boissons non alcoolisées avez-vous prévu de servir pendant le festival ?",
+        "type": "number",
+        "unit": "canettes",
+        "max": 5000,
+        "fields": [],
+        "choices": []
+    },
+    {
+        "key": "reusable",
+        "title": "Prévoyez-vous d'utiliser des contenants réutilisables pour servir les boissons ?",
+        "type": "boolean"
+    },
+    {
+        "key": "tri",
+        "title": "Avez-vous prévu un système de tri des déchets pour les repas et les boissons ?",
+        "type": "boolean"
+    }
+]

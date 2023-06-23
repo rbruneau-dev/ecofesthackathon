@@ -1,0 +1,49 @@
+.table-container {
+  margin: 0 auto;
+  height: auto;
+}
+
+table {
+  width: 100;
+  padding: 20px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e5e5e5;
+}
+
+.transport-cell {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20px;
+}
+
+/* .voiture {
+    background-image: url('../../../src/assets/images/sectionimg.jpg');
+  }
+  
+  .train {
+    background-image: url('../../../src/assets/images/ttrain.jpg');
+  }
+  
+  .velo {
+    background-image: url('../../../src/assets/images/velo.png');
+  } */

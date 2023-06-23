@@ -1,0 +1,89 @@
+[
+    {
+        "key": "total",
+        "title": "Quel est le nombre estimé de participants à l'événement culturel ?",
+        "type": "number",
+        "max": 1000,
+        "unit": "festivaliers et staff",
+        "fields": [],
+        "choices": []
+    },
+    {
+        "key": "mode-transport",
+        "title": "Quels sont les principaux modes de transport utilisés par les participants pour se rendre à l'événement ?",
+        "type": "multiple",
+        "unit": "transport",
+        "choices": [
+            "Voiture",
+            "Vélo",
+            "Train"
+        ]
+    },
+    {
+        "key": "distance",
+        "title": "Pouvez-vous fournir une estimation approximative de trajet en moyenne  pour chaque mode de transport ?",
+        "type": "collection",
+        "fields": [
+            {
+                "key": "car",
+                "name": "Voiture",
+                "type": "number",
+                "unit": "kms",
+                "default": 0,
+                "max": 100000
+            },
+            {
+                "key": "common",
+                "name": "Train",
+                "type": "number",
+                "unit": "kms",
+                "default": 0,
+                "max": 100000
+            },
+            {
+                "key": "bike",
+                "name": "Vélo",
+                "type": "number",
+                "unit": "kms",
+                "default": 0,
+                "max": 10000
+            }
+        ],
+        "choices": []
+    },
+    {
+        "key": "count-mode-transport",
+        "title": "Pouvez-vous fournir une estimation approximative du nombre de participants utilisant chaque mode de transport",
+        "type": "collection",
+        "fields": [
+            {
+                "key": "car",
+                "name": "Voiture",
+                "type": "number",
+                "unit": "%",
+                "default": 0
+            },
+            {
+                "key": "common",
+                "name": "Transport en commun",
+                "type": "number",
+                "unit": "%",
+                "default": 0
+            },
+            {
+                "key": "bike",
+                "name": "Vélo",
+                "type": "number",
+                "unit": "%",
+                "default": 0
+            }
+        ]
+    },
+    {
+        "key": "covoit",
+        "title": "Existe-t-il des options de covoiturage ou de partage de trajets encouragées ou mises en place pour les participants",
+        "type": "boolean",
+        "fields": [],
+        "choices": []
+    }
+]
