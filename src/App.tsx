@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import Form from './components/Form/';
 import Map from './components/InteractiveMap/Map';
 import './App.css';
@@ -85,11 +85,59 @@ const ContainerForm = styled.div`
   }
 `;
 
+const ice2 = keyframes`
+0% {
+  transform: matrix(0.03746, 0, 0, 0.03746, 303.336, 403.168) ;
+}
+
+100% {
+  transform: matrix(0.03746, 0, 0, 0.03746, 303.336, 400.168) ;
+}
+`;
+
+const ice1 = keyframes`
+0% {
+  transform: matrix(.03746, 0, 0, .03746, 545.661 ,258.573);
+}
+
+100% {
+  transform: matrix(.03746, 0 ,0 ,.03746 ,545.661, 255.573);
+}
+`;
+
+const cloud = keyframes`
+0% {
+  transform: translate(0, 0);
+}
+
+100% {
+  transform: translate(-2px, 0);
+}
+
+100% {
+  transform: translate(5px, 0);
+}
+`;
+
 const StyledMap = styled.div`
   position: relative;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+
+  svg {
+    #map_svg__ice_2 {
+      animation: ${ice2} 0.5s ease-in-out alternate infinite;
+    }
+
+    #map_svg__ice_1 {
+      animation: ${ice1} 0.5s ease-in-out alternate infinite;
+    }
+
+    #map_svg__cloud {
+      animation: ${cloud} 0.8s ease-in-out alternate infinite;
+    }
+  }
 `;
 
 export const StyledButton = styled.div<{ disabled?: boolean }>`
